@@ -7,7 +7,7 @@
     <style>
         /* Common styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe Script', cursive;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
@@ -15,7 +15,7 @@
 
         header {
             background-color: #333;
-            color: #fff;
+            color: #000; /* Changed text color to black */
             padding: 20px 0;
             text-align: center;
         }
@@ -23,6 +23,7 @@
         h1 {
             margin: 0;
             font-size: 36px;
+            color: #000; /* Changed text color to black */
         }
 
         nav {
@@ -120,7 +121,7 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                color: #fff;
+                color: #000; /* Changed text color to black */
             }
 
             .intro h2 {
@@ -128,6 +129,7 @@
                 margin-bottom: 20px;
                 font-family: 'Garamond', serif;
                 letter-spacing: 2px;
+                color: #000; /* Changed text color to black */
             }
 
             .nav-desktop {
@@ -155,6 +157,30 @@
                 display: block;
             }
         }
+
+        /* Custom styles for event sections */
+        .event-section {
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .event-content {
+            width: 50%;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        .event-image {
+            width: 50%;
+            overflow: hidden;
+        }
+
+        .event-image img {
+            width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -163,7 +189,7 @@
     <!-- Desktop navigation -->
     <nav class="nav-desktop">
         <a href="#gallery">Galerie</a>
-        <a href="#details">Details</a>
+        <a href="#details">Veranstaltungsdetails</a>
         <a href="#rsvp">RSVP</a>
         <a href="#contact">Kontakt</a>
     </nav>
@@ -182,6 +208,21 @@
         <h1>Einladung zu unserer Hochzeit</h1>
         <h2>Neelam Kumari & Lars Ferencz</h2>
         <p>6. Juli 2024</p>
+    </div>
+</section>
+
+<section id="main-event" class="event-section">
+    <div class="container">
+        <div class="event-content">
+            <h2>Hauptveranstaltung: Hochzeit</h2>
+            <p><strong>Datum:</strong> 6. Juli 2024</p>
+            <p><strong>Zeit:</strong> 12:30 Uhr</p>
+            <p><strong>Ort:</strong> Rathaus von Kopenhagen</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.362553769021!2d12.570242915760018!3d55.67609678050107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253b5b6d870df%3A0x400afe17e1908d0!2sCopenhagen%20City%20Hall!5e0!3m2!1sen!2suk!4v1647068719530!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="event-image">
+            <img src="https://via.placeholder.com/600x600" alt="Hochzeitsfoto">
+        </div>
     </div>
 </section>
 
@@ -245,4 +286,3 @@
 
 </body>
 </html>
-
