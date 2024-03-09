@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neelam & Lars's Wedding</title>
     <style>
+        /* Common styles */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -33,25 +34,6 @@
             text-decoration: none;
             margin: 0 10px;
             font-size: 18px;
-        }
-
-        .intro {
-            background-image: url('https://via.placeholder.com/1500x600');
-            background-size: cover;
-            background-position: center;
-            height: 600px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: #fff;
-        }
-
-        .intro h2 {
-            font-size: 48px;
-            margin-bottom: 20px;
-            font-family: 'Garamond', serif;
-            letter-spacing: 2px;
         }
 
         .container {
@@ -126,23 +108,79 @@
             padding: 20px 0;
             text-align: center;
         }
+
+        /* Desktop styles */
+        @media (min-width: 768px) {
+            .intro {
+                background-image: url('https://via.placeholder.com/1500x600');
+                background-size: cover;
+                background-position: center;
+                height: 600px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #fff;
+            }
+
+            .intro h2 {
+                font-size: 48px;
+                margin-bottom: 20px;
+                font-family: 'Garamond', serif;
+                letter-spacing: 2px;
+            }
+
+            .nav-desktop {
+                display: block;
+            }
+
+            .nav-mobile {
+                display: none;
+            }
+        }
+
+        /* Mobile styles */
+        @media (max-width: 767px) {
+            .intro {
+                background-color: #333;
+                color: #fff;
+                padding: 20px 0;
+            }
+
+            .nav-desktop {
+                display: none;
+            }
+
+            .nav-mobile {
+                display: block;
+            }
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>N & L's Wedding</h1>
-    <nav>
+    <h1>Neelam & Lars's Wedding</h1>
+    <!-- Desktop navigation -->
+    <nav class="nav-desktop">
         <a href="#gallery">Gallery</a>
         <a href="#details">Event Details</a>
         <a href="#rsvp">RSVP</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Mobile navigation -->
+    <nav class="nav-mobile">
+        <a href="#gallery">Gallery</a> |
+        <a href="#details">Details</a> |
+        <a href="#rsvp">RSVP</a> |
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <section class="intro">
     <div class="container">
-        <h2>N & L</h2>
+        <h2>Neelam Kumari & Lars Ferencz</h2>
         <p>July 6, 2024</p>
     </div>
 </section>
