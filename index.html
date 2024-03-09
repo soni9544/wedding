@@ -172,6 +172,27 @@
             padding: 0 20px;
         }
 
+        .half-page {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 300px;
+        }
+
+        .half-page-content {
+            width: 50%;
+            text-align: left;
+            padding: 20px;
+        }
+
+        .half-page-image {
+            width: 50%;
+            height: 300px;
+            background-image: url('https://via.placeholder.com/600x300'); /* Replace with desired image */
+            background-size: cover;
+            background-position: center;
+        }
+
     </style>
 </head>
 <body>
@@ -213,55 +234,16 @@
     </div>
 </section>
 
-<section id="gallery">
+<section class="half-page" style="background-color: #ccc;">
     <div class="container">
-        <h2 class="section-title">Fotogalerie</h2>
-        <div class="gallery">
-            <img src="https://via.placeholder.com/300" alt="Hochzeitsfoto">
-            <img src="https://via.placeholder.com/300" alt="Hochzeitsfoto">
-            <img src="https://via.placeholder.com/300" alt="Hochzeitsfoto">
-            <img src="https://via.placeholder.com/300" alt="Hochzeitsfoto">
-            <!-- Weitere Bilder hinzufügen, falls erforderlich -->
+        <div class="half-page-content">
+            <h2>Zeit für die Feier!</h2>
+            <p>Wir laden Sie herzlich zur Feier im Zahida ein.</p>
+            <p><strong>Datum:</strong> 6. Juli 2024</p>
+            <p><strong>Zeit:</strong> 17:30 Uhr</p>
+            <p><strong>Ort:</strong> Zahida</p>
         </div>
-    </div>
-</section>
-
-<section id="details">
-    <div class="container">
-        <h2 class="section-title">Veranstaltungsdetails</h2>
-        <p>Datum: 6. Juli 2024</p>
-        <p>Zeit: 6:30 PM</p>
-        <p>Ort: Rathaus, Kopenhagen</p>
-    </div>
-</section>
-
-<section id="rsvp">
-    <div class="container">
-        <h2 class="section-title">RSVP</h2>
-        <form action="submit.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">E-Mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="attend">Nimmst du teil?</label>
-            <select id="attend" name="attend" required>
-                <option value="yes">Ja, ich werde da sein!</option>
-                <option value="no">Entschuldigung, ich kann nicht teilnehmen.</option>
-            </select>
-
-            <button type="submit">RSVP absenden</button>
-        </form>
-    </div>
-</section>
-
-<section id="contact">
-    <div class="container">
-        <h2 class="section-title">Kontakt</h2>
-        <p>Wenn Sie Fragen haben oder Hilfe benötigen, können Sie uns gerne kontaktieren:</p>
-        <p>E-Mail: neelamandlars@example.com</p>
-        <p>Telefon: 123-456-7890</p>
+        <div class="half-page-image"></div>
     </div>
 </section>
 
