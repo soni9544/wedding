@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>John & Jane's Wedding</h1>
+            <nav>
+                <ul>
+                    <li><a href="#rsvp">RSVP</a></li>
+                    <li><a href="#details">Event Details</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="rsvp">
+        <div class="container">
+            <h2>RSVP</h2>
+            <form action="submit.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="attend">Will you attend?</label>
+                <select id="attend" name="attend" required>
+                    <option value="yes">Yes, I'll be there!</option>
+                    <option value="no">Sorry, I can't make it.</option>
+                </select>
+
+                <button type="submit">Submit RSVP</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="details">
+        <div class="container">
+            <h2>Event Details</h2>
+            <p>Date: July 6, 2024</p>
+            <p>Time: 6:30 PM</p>
+            <p>Venue: City Hall, Copenhagen</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2243.7681221672645!2d12.569507116183857!3d55.677995180519085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253c3543be3d9%3A0x53aefce79d3b4d8c!2sCopenhagen%20City%20Hall!5e0!3m2!1sen!2sca!4v1646395905657!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <div class="gallery-images">
+                <img src="placeholder1.jpg" alt="Wedding Photo">
+                <img src="placeholder2.jpg" alt="Wedding Photo">
+                <img src="placeholder3.jpg" alt="Wedding Photo">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>If you have any questions or need assistance, feel free to contact us:</p>
+            <p>Email: johnandjane@example.com</p>
+            <p>Phone: 123-456-7890</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 John & Jane's Wedding</p>
+        </div>
+    </footer>
+</body>
+</html>
