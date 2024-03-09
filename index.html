@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* Common styles */
+        /* Gemeinsame Stile */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe Script', cursive;
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
@@ -14,7 +14,7 @@
 
         header {
             background-color: #333;
-            color: #fff;
+            color: #000; /* Changed text color to black */
             padding: 20px 0;
             text-align: center;
         }
@@ -22,6 +22,7 @@
         h1 {
             margin: 0;
             font-size: 36px;
+            color: #000; /* Changed text color to black */
         }
 
         nav {
@@ -108,10 +109,10 @@
             text-align: center;
         }
 
-        /* Desktop styles */
+        /* Desktop-Stile */
         @media (min-width: 768px) {
             .intro {
-                background-image: url('41314.jpg'); /* Replace with the uploaded image */
+                background-image: url('41314.jpg'); /* Mit hochgeladenem Bild ersetzen */
                 background-size: cover;
                 background-position: center;
                 height: 600px;
@@ -119,7 +120,7 @@
                 justify-content: center;
                 align-items: center;
                 text-align: center;
-                color: #fff;
+                color: #000; /* Changed text color to black */
             }
 
             .intro h2 {
@@ -127,6 +128,7 @@
                 margin-bottom: 20px;
                 font-family: 'Garamond', serif;
                 letter-spacing: 2px;
+                color: #000; /* Changed text color to black */
             }
 
             .nav-desktop {
@@ -138,7 +140,7 @@
             }
         }
 
-        /* Mobile styles */
+        /* Mobile-Stile */
         @media (max-width: 767px) {
             .intro {
                 background-color: #333;
@@ -159,49 +161,50 @@
 <body>
 
 <header>
-    <!-- Desktop navigation -->
+    <!-- Desktop-Navigation -->
     <nav class="nav-desktop">
-        <a href="#gallery">Gallery</a>
-        <a href="#details">Event Details</a>
+        <a href="#gallery">Galerie</a>
+        <a href="#details">Veranstaltungsdetails</a>
         <a href="#rsvp">RSVP</a>
-        <a href="#contact">Contact</a>
+        <a href="#contact">Kontakt</a>
     </nav>
 
-    <!-- Mobile navigation -->
+    <!-- Mobile-Navigation -->
     <nav class="nav-mobile">
-        <a href="#gallery">Gallery</a> |
+        <a href="#gallery">Galerie</a> |
         <a href="#details">Details</a> |
         <a href="#rsvp">RSVP</a> |
-        <a href="#contact">Contact</a>
+        <a href="#contact">Kontakt</a>
     </nav>
 </header>
 
 <section class="intro">
     <div class="container">
+        <h1>Einladung zu unserer Hochzeit</h1> <!-- Added "Einladung zu unserer Hochzeit" in German -->
         <h2>Neelam Kumari & Lars Ferencz</h2>
-        <p>July 6, 2024</p>
+        <p>6. Juli 2024</p>
     </div>
 </section>
 
 <section id="gallery">
     <div class="container">
-        <h2 class="section-title">Photo Gallery</h2>
+        <h2 class="section-title">Fotogalerie</h2>
         <div class="gallery">
-            <img src="https://via.placeholder.com/300" alt="Wedding Photo">
-            <img src="https://via.placeholder.com/300" alt="Wedding Photo">
-            <img src="https://via.placeholder.com/300" alt="Wedding Photo">
-            <img src="https://via.placeholder.com/300" alt="Wedding Photo">
-            <!-- Add more images as needed -->
+            <img src="https://via.placeholder.com/300" alt="Hochzeitsfoto">
+            <img src="https://via.placeholder.com/300" alt="Hochzeitsfoto">
+            <img src="https://via.placeholder.com/300" alt="Hochzeitsfoto">
+            <img src="https://via.placeholder.com/300" alt="Hochzeitsfoto">
+            <!-- Weitere Bilder hinzufügen, falls erforderlich -->
         </div>
     </div>
 </section>
 
 <section id="details">
     <div class="container">
-        <h2 class="section-title">Event Details</h2>
-        <p>Date: July 6, 2024</p>
-        <p>Time: 6:30 PM</p>
-        <p>Venue: City Hall, Copenhagen</p>
+        <h2 class="section-title">Veranstaltungsdetails</h2>
+        <p>Datum: 6. Juli 2024</p>
+        <p>Zeit: 18:30 Uhr</p>
+        <p>Ort: Rathaus, Kopenhagen</p>
     </div>
 </section>
 
@@ -212,26 +215,26 @@
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
+            <label for="email">E-Mail:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="attend">Will you attend?</label>
+            <label for="attend">Nimmst du teil?</label>
             <select id="attend" name="attend" required>
-                <option value="yes">Yes, I'll be there!</option>
-                <option value="no">Sorry, I can't make it.</option>
+                <option value="yes">Ja, ich werde da sein!</option>
+                <option value="no">Entschuldigung, ich kann nicht teilnehmen.</option>
             </select>
 
-            <button type="submit">Submit RSVP</button>
+            <button type="submit">RSVP absenden</button>
         </form>
     </div>
 </section>
 
 <section id="contact">
     <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p>If you have any questions or need assistance, feel free to contact us:</p>
-        <p>Email: neelamandlars@example.com</p>
-        <p>Phone: 123-456-7890</p>
+        <h2 class="section-title">Kontakt</h2>
+        <p>Wenn Sie Fragen haben oder Hilfe benötigen, können Sie uns gerne kontaktieren:</p>
+        <p>E-Mail: neelamandlars@example.com</p>
+        <p>Telefon: 123-456-7890</p>
     </div>
 </section>
 
