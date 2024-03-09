@@ -50,6 +50,8 @@
         .intro h2 {
             font-size: 48px;
             margin-bottom: 20px;
+            font-family: 'Garamond', serif;
+            letter-spacing: 2px;
         }
 
         .container {
@@ -61,6 +63,14 @@
         section {
             padding: 40px 0;
             text-align: center;
+        }
+
+        h2.section-title {
+            font-family: 'Garamond', serif;
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
         }
 
         .gallery {
@@ -121,7 +131,7 @@
 <body>
 
 <header>
-    <h1>Neelam & Lars's Wedding</h1>
+    <h1>N & L's Wedding</h1>
     <nav>
         <a href="#gallery">Gallery</a>
         <a href="#details">Event Details</a>
@@ -132,14 +142,14 @@
 
 <section class="intro">
     <div class="container">
-        <h2>Neelam Kumari & Lars Ferencz</h2>
+        <h2>N & L</h2>
         <p>July 6, 2024</p>
     </div>
 </section>
 
 <section id="gallery">
     <div class="container">
-        <h2>Photo Gallery</h2>
+        <h2 class="section-title">Photo Gallery</h2>
         <div class="gallery">
             <img src="https://via.placeholder.com/300" alt="Wedding Photo">
             <img src="https://via.placeholder.com/300" alt="Wedding Photo">
@@ -152,7 +162,7 @@
 
 <section id="details">
     <div class="container">
-        <h2>Event Details</h2>
+        <h2 class="section-title">Event Details</h2>
         <p>Date: July 6, 2024</p>
         <p>Time: 6:30 PM</p>
         <p>Venue: City Hall, Copenhagen</p>
@@ -161,7 +171,7 @@
 
 <section id="rsvp">
     <div class="container">
-        <h2>RSVP</h2>
+        <h2 class="section-title">RSVP</h2>
         <form action="submit.php" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
@@ -182,7 +192,7 @@
 
 <section id="contact">
     <div class="container">
-        <h2>Contact</h2>
+        <h2 class="section-title">Contact</h2>
         <p>If you have any questions or need assistance, feel free to contact us:</p>
         <p>Email: neelamandlars@example.com</p>
         <p>Phone: 123-456-7890</p>
