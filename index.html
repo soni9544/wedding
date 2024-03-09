@@ -172,14 +172,249 @@
             padding: 0 20px;
         }
 
-        .event-image {
+        .map-container {
             width: 50%;
-            overflow: hidden;
+            padding: 0 20px;
         }
 
-        .event-image img {
+        .map-container iframe {
             width: 100%;
-            height: auto;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Desktop navigation -->
+    <nav class="nav-desktop">
+        <a href="#gallery">Galerie</a>
+        <a href="#details">Veranstaltungsdetails</a>
+        <a href="#rsvp">RSVP</a>
+        <a href="#contact">Kontakt</a>
+    </nav>
+
+    <!-- Mobile navigation -->
+    <nav class="nav-mobile">
+        <a href="#gallery">Galerie</a> |
+        <a href="#details">Details</a> |
+        <a href="#rsvp">RSVP</a> |
+        <a href="#contact">Kontakt</a>
+    </nav>
+</
+User
+instead apart form first page can you make all the pages with two backgorund. Half one solid bacgroudn and otehr halve otehr solid bacjfound. Also make goohle map smaller in size with marker poiting ont he location
+ChatGPT
+Sure, I'll update all the sections to have a split background with one color on one side and another color on the other side. Additionally, I'll adjust the size of the Google Map and add a marker pointing to the location. Here's the modified HTML:
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Details</title>
+    <style>
+        /* Common styles */
+        body {
+            font-family: 'Segoe Script', cursive;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #000; /* Changed text color to black */
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+            color: #000; /* Changed text color to black */
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 18px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        section {
+            padding: 40px 0;
+            text-align: center;
+            position: relative;
+        }
+
+        h2.section-title {
+            font-family: 'Garamond', serif;
+            font-size: 36px;
+            color: #333;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 300px;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        /* Desktop styles */
+        @media (min-width: 768px) {
+            .intro {
+                background-image: url('41314.jpg'); /* Replace with the uploaded image */
+                background-size: cover;
+                background-position: center;
+                height: 600px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #000; /* Changed text color to black */
+            }
+
+            .intro h2 {
+                font-size: 48px;
+                margin-bottom: 20px;
+                font-family: 'Garamond', serif;
+                letter-spacing: 2px;
+                color: #000; /* Changed text color to black */
+            }
+
+            .nav-desktop {
+                display: block;
+            }
+
+            .nav-mobile {
+                display: none;
+            }
+        }
+
+        /* Mobile styles */
+        @media (max-width: 767px) {
+            .intro {
+                background-color: #333;
+                color: #fff;
+                padding: 20px 0;
+            }
+
+            .nav-desktop {
+                display: none;
+            }
+
+            .nav-mobile {
+                display: block;
+            }
+        }
+
+        /* Custom styles for event sections */
+        .event-section {
+            padding: 40px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .event-content {
+            width: 50%;
+            text-align: left;
+            padding: 0 20px;
+        }
+
+        .map-container {
+            width: 50%;
+            padding: 0 20px;
+            position: relative;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 300px;
+        }
+
+        .split-background {
+            display: flex;
+        }
+
+        .left-background {
+            background-color: #ccc; /* Change to desired color */
+            width: 50%;
+            height: 100%;
+        }
+
+        .right-background {
+            background-color: #eee; /* Change to desired color */
+            width: 50%;
+            height: 100%;
+        }
+
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
         }
     </style>
 </head>
@@ -213,15 +448,20 @@
 
 <section id="main-event" class="event-section">
     <div class="container">
-        <div class="event-content">
-            <h2>Hauptveranstaltung: Hochzeit</h2>
-            <p><strong>Datum:</strong> 6. Juli 2024</p>
-            <p><strong>Zeit:</strong> 12:30 Uhr</p>
-            <p><strong>Ort:</strong> Rathaus von Kopenhagen</p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.362553769021!2d12.570242915760018!3d55.67609678050107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253b5b6d870df%3A0x400afe17e1908d0!2sCopenhagen%20City%20Hall!5e0!3m2!1sen!2suk!4v1647068719530!5m2!1sen!2suk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="split-background">
+            <div class="left-background"></div>
+            <div class="right-background"></div>
         </div>
-        <div class="event-image">
-            <img src="https://via.placeholder.com/600x600" alt="Hochzeitsfoto">
+        <div class="content">
+            <div class="event-content">
+                <h2>Hauptveranstaltung: Hochzeit</h2>
+                <p><strong>Datum:</strong> 6. Juli 2024</p>
+                <p><strong>Zeit:</strong> 12:30 Uhr</p>
+                <p><strong>Ort:</strong> Rathaus von Kopenhagen</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.362553769021!2d12.570242915760018!3d55.67609678050107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253b5b6d870df%3A0x400afe17e1908d0!2sCopenhagen%20City%20Hall!5e0!3m2!1sen!2suk!4v1647068719530!5m2!1sen!2suk" width="300" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
         </div>
     </div>
 </section>
