@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Details</title>
     <style>
-        /* Gemeinsame Stile */
+        /* Common styles */
         body {
             font-family: 'Segoe Script', cursive;
             margin: 0;
@@ -109,10 +110,10 @@
             text-align: center;
         }
 
-        /* Desktop-Stile */
+        /* Desktop styles */
         @media (min-width: 768px) {
             .intro {
-                background-image: url('41314.jpg'); /* Mit hochgeladenem Bild ersetzen */
+                background-image: url('41314.jpg'); /* Replace with the uploaded image */
                 background-size: cover;
                 background-position: center;
                 height: 600px;
@@ -140,7 +141,7 @@
             }
         }
 
-        /* Mobile-Stile */
+        /* Mobile styles */
         @media (max-width: 767px) {
             .intro {
                 background-color: #333;
@@ -156,12 +157,28 @@
                 display: block;
             }
         }
+
+        /* Custom styles for event sections */
+        .event-section {
+            background-color: #333;
+            color: #fff;
+            padding: 40px;
+            margin-top: 50px;
+        }
+
+        .event-section h2 {
+            margin-top: 0;
+        }
+
+        .event-section p {
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <!-- Desktop-Navigation -->
+    <!-- Desktop navigation -->
     <nav class="nav-desktop">
         <a href="#gallery">Galerie</a>
         <a href="#details">Veranstaltungsdetails</a>
@@ -169,7 +186,7 @@
         <a href="#contact">Kontakt</a>
     </nav>
 
-    <!-- Mobile-Navigation -->
+    <!-- Mobile navigation -->
     <nav class="nav-mobile">
         <a href="#gallery">Galerie</a> |
         <a href="#details">Details</a> |
@@ -186,12 +203,22 @@
     </div>
 </section>
 
-<section id="details">
+<section id="main-event" class="event-section">
     <div class="container">
-        <h2 class="section-title">Veranstaltungsdetails</h2>
-        <p><strong>Hochzeit:</strong> Am 6. Juli 2024 um 12:30 Uhr im Rathaus von Kopenhagen</p>
+        <h2>Hauptveranstaltung: Hochzeit</h2>
+        <p><strong>Datum:</strong> 6. Juli 2024</p>
+        <p><strong>Zeit:</strong> 12:30 Uhr</p>
+        <p><strong>Ort:</strong> Rathaus von Kopenhagen</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.362553769021!2d12.570242915760018!3d55.67609678050107!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253b5b6d870df%3A0x400afe17e1908d0!2sCopenhagen%20City%20Hall!5e0!3m2!1sen!2suk!4v1647068719530!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        <p><strong>Abendessen:</strong> Am 6. Juli 2024 um 17:30 Uhr im Zahida</p>
+    </div>
+</section>
+
+<section id="celebration-dinner" class="event-section">
+    <div class="container">
+        <h2>Celebration Dinner</h2>
+        <p><strong>Datum:</strong> 6. Juli 2024</p>
+        <p><strong>Zeit:</strong> 17:30 Uhr</p>
+        <p><strong>Ort:</strong> Zahida</p>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.281149004229!2d12.558346515760112!3d55.678652780491536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465253acc0d1a14b%3A0x7c30b2a33d8dd19e!2sZahida%20Restaurant!5e0!3m2!1sen!2suk!4v1647068728167!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </div>
 </section>
